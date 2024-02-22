@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Voyance</title>
+  </head>
+
+  <body>
+    <div class="container mt-5 text-center">
+      <h1>Consultation de Voyance</h1>
+      <p class="text-muted mb-4">
+        Découvrez ce que l'avenir vous réserve. Pour une réponse claire, suivez
+        ces étapes :
+      </p>
+      <div class="instructions">
+        <ul class="text-center instructions-list">
+          <li>
+            Faites le vide dans votre esprit afin d'être parfaitement
+            concentré(e). Réfléchissez à la question que vous souhaitez poser...
+          </li>
+          <li>
+            Puis cliquez sur la boule de cristal pour obtenir une prédiction !
+          </li>
+        </ul>
+      </div>
+      <div
+        class="crystal-ball mx-auto position-relative d-flex align-items-center justify-content-center"
+        id="crystalBall"
+        onclick="getRandomPrediction()"
+      >
+        <p id="prediction" class="position-absolute w-100 text-center"></p>
+        <img src="crystal-ball.png" alt="Crystal Ball" class="img-fluid" />
+      </div>
+      <button
+        class="btn btn-primary mt-3 reset-button"
+        onclick="resetPrediction()"
+      >
+        Réinitialiser la boule
+      </button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
